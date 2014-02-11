@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Welcome to this super fun and secretive Twitter app!!</h1>
+
+<div id="response"></div>
+
+<form id="tweet" name="input" action="/tweet" method="post">
+What does loooorenanicole want to tweet?<br><input type="text" name="tweeting">
+<input id="lolo_tweet" type="submit" value="Submit">
+</form>
+
+<div id="loading">
+  <h2> Loading </h2>
+  <img src="ajax-loader.gif" alt="we are loading!"/>
+</div>
+
+<h2>Let's Look at Other Peoples Tweets!</h2>
+<form id="fetch" name="input" action="/temp" method="post">
+Username: <input type="text" name="username">
+<input id='majical_unicorns' type="submit" value="Submit">
+</form>
+<div id="comments"></div>
+</div>
