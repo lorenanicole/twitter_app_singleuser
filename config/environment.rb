@@ -42,13 +42,8 @@ env_config.each do |key, value|
 end
 
 $client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = "IkSjT0v7UcP2mkZFfTM3Zg" #api key
-  config.consumer_secret     = "d3mctB4inrX8vL6xOM6odONSf1Pedi8wxv0PZPC72PI"   #api secret
-  config.access_token        = "21767394-EcABMUoLTsvP2pJDBLF0fk6ahvhJXqLZIr6sydZOX"
-  config.access_token_secret = "0qpBVgmexPNpKbP8ER2vB2kOkpqAORSHpIOvxHLnbPVi9"
+  config.consumer_key        = ENV['CONSUMER_KEY'] #api key
+  config.consumer_secret     = ENV['CONSUMER_SECRET']   #api secret
+  config.access_token        = ENV['ACCESS_TOKEN']
+  config.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
 end
-
-
-
-
-
